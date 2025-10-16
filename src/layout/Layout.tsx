@@ -1,7 +1,9 @@
-const Layout = () => {
+const Layout = ({ children }: { children: any }) => {
 	return (
-		<div>
+		<div className="flex w-screen min-h-screen">
 			Layout
+
+			{children && <div className="flex flex-1">{children}</div>}
 		</div>
 	)
 }
