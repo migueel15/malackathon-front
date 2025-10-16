@@ -1,4 +1,4 @@
-const Layout = ({ children }: { children: any }) => {
+const Layout = ({ children }: { children?: React.ReactNode }) => {
 	return (
 		<div className="flex w-screen min-h-screen">
 			Layout
