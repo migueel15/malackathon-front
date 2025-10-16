@@ -4,6 +4,7 @@ import './index.css'
 // import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Layout from './layout/Layout.tsx'
+import Dashboard from './features/dashboard/Dashboard.tsx'
 
 const router = createBrowserRouter([
 	{
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "",
-				// element: 
+				element: <Dashboard />
 			}
 		]
 	}
